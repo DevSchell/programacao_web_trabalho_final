@@ -1,0 +1,1 @@
+Confirma pra mim que o arquivo @rules.cursor/rules/svelte.mdc  está sendo usado como arquivo de regras. Caso ele esteja, adicione uma nova regra que faça você sempre salvar meus prompts um abaixo no outro em um arquivo que você criará chamado prompts.md
