@@ -1,0 +1,39 @@
+---
+description: "Material Design 3 com foco em acessibilidade, layout e responsividade."
+globs: **/*.{svelte,html,css,ts,js}
+alwaysApply: true
+---
+
+# Material Design 3 — UI e implementação
+
+Ao implementar ou alterar código de interface, siga os princípios do **Material Design 3 (M3)**.
+
+## Layout e hierarquia visual
+
+- Use escala de espaçamento baseada em múltiplos de 4px/8px (4, 8, 12, 16, 24, 32, 48).
+- Mantenha hierarquia clara com tipografia M3 (display, headline, title, body, label) e contraste de tamanho/peso.
+- Aplique elevação, superfícies e bordas arredondadas de forma consistente; evite poluição visual.
+- Garanta alinhamento, ritmo vertical e áreas de respiro entre seções e componentes.
+- Prefira composição em grid/flex com containers bem definidos e conteúdo legível em larguras confortáveis.
+
+## Responsividade
+
+- Projete mobile-first e adapte para tablet e desktop com breakpoints progressivos.
+- Evite overflow horizontal; use `flex`, `grid`, `min-width: 0` e quebras de linha quando necessário.
+- Garanta que textos, botões e cards se reorganizem sem perda de usabilidade em telas pequenas.
+- Ajuste padding, tamanho de fonte e densidade conforme o viewport, sem depender só de zoom.
+
+## Acessibilidade (prioridade)
+
+- Use HTML semântico (`header`, `nav`, `main`, `section`, `button`, etc.) antes de recorrer a `div` genéricas.
+- Garanta contraste de cor adequado (WCAG AA como mínimo) e estados visíveis de foco, hover e disabled.
+- Todos os elementos interativos devem ser acessíveis por teclado (Tab, Enter, Space, Escape quando aplicável).
+- Áreas de toque mínimas de ~48×48px; não confie apenas em hover para ações essenciais.
+- Forneça `aria-label`, `aria-describedby`, `role` e `alt` quando o contexto visual não for suficiente.
+- Respeite `prefers-reduced-motion` em animações e transições.
+
+## Implementação prática
+
+- Com Tailwind, traduza tokens M3 em classes utilitárias consistentes (cores, radius, shadow, spacing).
+- Reutilize padrões de componentes (botões, cards, inputs, dialogs) em vez de estilos ad hoc por tela.
+- Valide cada alteração visual em pelo menos um viewport mobile e um desktop antes de considerar concluída.

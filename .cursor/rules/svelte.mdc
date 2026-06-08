@@ -155,4 +155,11 @@ Keep inline comments concise and meaningful
 
 ## Salvamento de prompts
 
-Sempre que receber uma nova mensagem do usuário, antes de qualquer outra ação, acrescente o texto integral do prompt ao arquivo `prompts.md` na raiz do projeto. Cada prompt deve ser adicionado um abaixo do outro, em ordem cronológica, separado por uma linha em branco. Não sobrescreva prompts anteriores.
+Sempre que receber uma nova mensagem do usuário, antes de qualquer outra ação, acrescente o texto integral do prompt ao arquivo `prompts.md` na raiz do projeto. Cada prompt deve ser adicionado um abaixo do outro, em ordem cronológica. Não sobrescreva prompts anteriores.
+
+Separe cada prompt com uma linha de hífens. O timestamp deve ficar sempre no início dessa linha, no formato `DD/MM/YYYY HH:MM` (dia, mês, ano, hora e minuto), seguido pelos hífens até completar o separador. Exemplo:
+
+```
+08/06/2026 19:37 ------------------------------------------------------------
+Texto integral do prompt do usuário aqui.
+```
